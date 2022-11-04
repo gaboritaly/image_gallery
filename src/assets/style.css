@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.btn-slide {
+  position: absolute;
+  background: #f1f1f1;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 300ms ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 10;
+  top: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid #fff;
+}
+.btn-slide:hover {
+  opacity: 1;
+}
+.btn-slide.prev {
+  left: 20px;
+  background: url("../assets/icons/arrow_left.svg") #fff;
+  background-position: center;
+  background-size: cover;
+}
+.btn-slide.next {
+  right: 20px;
+  background: url("../assets/icons/arrow_right.svg") #fff;
+  background-position: center;
+  background-size: cover;
+}
